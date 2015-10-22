@@ -20,6 +20,7 @@ RUN cd /tmp &&\
     unzip edison-sdk-linux64-ww25.5-15.zip &&\
     /tmp/poky-edison-glibc-x86_64-edison-image-core2-32-toolchain-1.7.2.sh -d /edison-sdk -y
 
+ENV EDISON_SDK="/edison-sdk"
 ENV PREFIX="/opt/edison"
 VOLUME /opt/edison
 
